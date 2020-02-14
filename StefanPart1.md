@@ -1,42 +1,43 @@
 # Part 1-1
 
-PS C:\Users\sderosa> cd C:\Users\sderosa\Homework1
-PS C:\Users\sderosa\Homework1> cd dockerHomework
-PS C:\Users\sderosa\Homework1\dockerHomework> kubectl apply -f pod.yaml
-error: unable to recognize "pod.yaml": Get https://kubernetes.docker.internal:6443/api?timeout=32s: dial tcp 127.0.0.1:6443: connectex: No connection could be made because the target machine actively refused it.
-PS C:\Users\sderosa\Homework1\dockerHomework> kubectl apply -f pod.yaml
-pod/demo created
-PS C:\Users\sderosa\Homework1\dockerHomework> kubectl get pods
-NAME   READY   STATUS    RESTARTS   AGE
-demo   1/1     Running   0          15s
-PS C:\Users\sderosa\Homework1\dockerHomework> kubectl logs demo
-PING 8.8.8.8 (8.8.8.8): 56 data bytes
-64 bytes from 8.8.8.8: seq=0 ttl=37 time=12.540 ms
-64 bytes from 8.8.8.8: seq=1 ttl=37 time=12.269 ms
-64 bytes from 8.8.8.8: seq=2 ttl=37 time=12.606 ms
-64 bytes from 8.8.8.8: seq=3 ttl=37 time=12.743 ms
-64 bytes from 8.8.8.8: seq=4 ttl=37 time=13.153 ms
-64 bytes from 8.8.8.8: seq=5 ttl=37 time=13.140 ms
-64 bytes from 8.8.8.8: seq=6 ttl=37 time=13.969 ms
-64 bytes from 8.8.8.8: seq=7 ttl=37 time=13.399 ms
-64 bytes from 8.8.8.8: seq=8 ttl=37 time=12.230 ms
-64 bytes from 8.8.8.8: seq=9 ttl=37 time=11.734 ms
-64 bytes from 8.8.8.8: seq=10 ttl=37 time=12.520 ms
-64 bytes from 8.8.8.8: seq=11 ttl=37 time=12.292 ms
-64 bytes from 8.8.8.8: seq=12 ttl=37 time=12.256 ms
-64 bytes from 8.8.8.8: seq=13 ttl=37 time=12.456 ms
-64 bytes from 8.8.8.8: seq=14 ttl=37 time=12.996 ms
-64 bytes from 8.8.8.8: seq=15 ttl=37 time=12.247 ms
-64 bytes from 8.8.8.8: seq=16 ttl=37 time=12.050 ms
-64 bytes from 8.8.8.8: seq=17 ttl=37 time=78.282 ms
-64 bytes from 8.8.8.8: seq=18 ttl=37 time=12.765 ms
-64 bytes from 8.8.8.8: seq=19 ttl=37 time=12.641 ms
-64 bytes from 8.8.8.8: seq=20 ttl=37 time=12.262 ms
-64 bytes from 8.8.8.8: seq=21 ttl=37 time=13.109 ms
-64 bytes from 8.8.8.8: seq=22 ttl=37 time=13.339 ms
-PS C:\Users\sderosa\Homework1\dockerHomework> kubectl delete -f pod.yaml
-pod "demo" deleted
-PS C:\Users\sderosa\Homework1\dockerHomework>
+*   PS C:\Users\sderosa> cd C:\Users\sderosa\Homework1
+*	PS C:\Users\sderosa\Homework1> cd dockerHomework
+*	PS C:\Users\sderosa\Homework1\dockerHomework> kubectl apply -f pod.yaml
+*	error: unable to recognize "pod.yaml": Get https://kubernetes.docker.internal:6443/api?timeout=32s: dial tcp 127.0.0.1:6443: connectex: No connection could be made because the target machine actively refused it.
+*	PS C:\Users\sderosa\Homework1\dockerHomework> kubectl apply -f pod.yaml
+*	pod/demo created
+*	PS C:\Users\sderosa\Homework1\dockerHomework> kubectl get pods
+*	NAME   READY   STATUS    RESTARTS   AGE
+*	demo   1/1     Running   0          15s
+*	PS C:\Users\sderosa\Homework1\dockerHomework> kubectl logs demo
+*	PING 8.8.8.8 (8.8.8.8): 56 data bytes
+*	64 bytes from 8.8.8.8: seq=0 ttl=37 time=12.540 ms
+*	64 bytes from 8.8.8.8: seq=1 ttl=37 time=12.269 ms
+*	64 bytes from 8.8.8.8: seq=2 ttl=37 time=12.606 ms
+*	64 bytes from 8.8.8.8: seq=3 ttl=37 time=12.743 ms
+*	64 bytes from 8.8.8.8: seq=4 ttl=37 time=13.153 ms
+*	64 bytes from 8.8.8.8: seq=5 ttl=37 time=13.140 ms
+*	64 bytes from 8.8.8.8: seq=6 ttl=37 time=13.969 ms
+*	64 bytes from 8.8.8.8: seq=7 ttl=37 time=13.399 ms
+*	64 bytes from 8.8.8.8: seq=8 ttl=37 time=12.230 ms
+*	64 bytes from 8.8.8.8: seq=9 ttl=37 time=11.734 ms
+*	64 bytes from 8.8.8.8: seq=10 ttl=37 time=12.520 ms
+*	64 bytes from 8.8.8.8: seq=11 ttl=37 time=12.292 ms
+*	64 bytes from 8.8.8.8: seq=12 ttl=37 time=12.256 ms
+*	64 bytes from 8.8.8.8: seq=13 ttl=37 time=12.456 ms
+*	64 bytes from 8.8.8.8: seq=14 ttl=37 time=12.996 ms
+*	64 bytes from 8.8.8.8: seq=15 ttl=37 time=12.247 ms
+*	64 bytes from 8.8.8.8: seq=16 ttl=37 time=12.050 ms
+*	64 bytes from 8.8.8.8: seq=17 ttl=37 time=78.282 ms
+*	64 bytes from 8.8.8.8: seq=18 ttl=37 time=12.765 ms
+*	64 bytes from 8.8.8.8: seq=19 ttl=37 time=12.641 ms
+*	64 bytes from 8.8.8.8: seq=20 ttl=37 time=12.262 ms
+*	64 bytes from 8.8.8.8: seq=21 ttl=37 time=13.109 ms
+*	64 bytes from 8.8.8.8: seq=22 ttl=37 time=13.339 ms
+*	PS C:\Users\sderosa\Homework1\dockerHomework> kubectl delete -f pod.yaml
+*	pod "demo" deleted
+*	PS C:\Users\sderosa\Homework1\dockerHomework>
+
 
 
 # Part 1-2
