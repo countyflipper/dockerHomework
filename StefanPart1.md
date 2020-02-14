@@ -1,4 +1,4 @@
-##Part 1-1
+# Part 1-1
 
 PS C:\Users\sderosa> cd C:\Users\sderosa\Homework1
 PS C:\Users\sderosa\Homework1> cd dockerHomework
@@ -39,7 +39,7 @@ pod "demo" deleted
 PS C:\Users\sderosa\Homework1\dockerHomework>
 
 
-#Part 1-2
+# Part 1-2
 PS C:\Users\sderosa> docker swarm init
 error during connect: Post http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/swarm/init: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
 PS C:\Users\sderosa> docker swarm init
